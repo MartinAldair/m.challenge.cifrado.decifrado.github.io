@@ -15,14 +15,15 @@
     </header>
     <div class="flex-container">
         <div class="flex-item-left">
-            <textarea name="textarea" id="texto" rows="10" cols="50" autocapitalize="none" autocomplete="off" placeholder="Ingresa el texto aqui"></textarea>
-            <span id="textoInfoCifrar" style="display:block;">Solo con letras minúsculas y sin acentos ni caracteres especiales</span></p>
-            <button id="btnCifrar" onclick=handledCifrarTexto()>Encriptar</button>
-            <button id="btnDecifrar" onclick=handledDecifrarTexto() disabled="on">Desencriptar</button>
+            <textarea name="textarea" id="inputTexto" rows="10" cols="50" autocapitalize="none" autocomplete="off" placeholder="Ingresa el texto aqui"></textarea>
+            <span id="textoInfoEncriptar" style="display:block;">Solo con letras minúsculas y sin acentos ni caracteres especiales</span></p>
+            <button id="btnEncriptar" onclick=handledEncriptarTexto()>Encriptar</button>
+            <button id="btnDesencriptar" onclick=handledDesencriptarTexto()>Desencriptar</button>
         </div>
         <div class="flex-item-right">
-            <textarea name="textarea" id="inputTextoSalida" rows="10" cols="50" autocapitalize="none" autocomplete="off" disabled="on"></textarea>
-            <button id="btnCopiar" onclick=handledCopiarTexto() disabled="on">Copiar</button>
+            <textarea name="textarea" id="inputTextoSalida" rows="10" cols="50" autocapitalize="none" autocomplete="off"></textarea>
+            <span id="textoInfoCopiar" style="display:none;">Texto requerido</span></p>
+            <button id="btnCopiar" onclick=handledCopiarTexto()>Copiar</button>
         </div>
       </div>
     <script src="/script.js"></script>

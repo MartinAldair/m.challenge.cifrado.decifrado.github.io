@@ -17,7 +17,7 @@ header {
 }
 
 .flex-item-left {
-  background-color: #f1f1f1;
+  border-top: 1px;
   padding: 10px;
   flex: 50%;
 }
