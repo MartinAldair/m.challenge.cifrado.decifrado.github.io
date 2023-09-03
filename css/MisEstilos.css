@@ -1,9 +1,22 @@
-body {
-  margin: 0;
-}
-
 header {
   background-color: #ffffff;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.flex-item-left {
+  border-top: 1px;
+  padding: 10px;
+}
+
+.flex-item-right {
+  border-top: 1px;
+  padding: 10px;
 }
 
 .main-title > h1{
@@ -39,7 +52,6 @@ header {
   color: #05a753;
   font-size: 1.5em;
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
-  margin-right: 20px;
 }
 
 #btnDesencriptar {
@@ -65,27 +77,35 @@ header {
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
+#inputTexto{
+width: 450px;
+height: 300px;
 }
 
-.flex-item-left {
-  border-top: 1px;
-  padding: 10px;
-  flex: 50%;
-}
-
-.flex-item-right {
-  border-top: 1px;
-  padding: 10px;
-  flex: 50%;
+#inputTextoCopiar{
+  width: 450px;
+  height: 300px;
 }
 
 /* Vista Responsive */
 @media (max-width: 800px) {
   .flex-container {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 364px) {
+  #inputTexto{
+    width: 300px;
+  }
+  #inputTextoCopiar{
+    width: 300px;
+  }
+  #btnEncriptar {
+    margin-bottom: 20px;
+  }
+  #btnDesencriptar {
+    margin-left: 0px;
+    margin-bottom: 10px;
   }
 }
