@@ -10,22 +10,22 @@
 <body>
     <header>
         <div class="main-title">
-            <h1>Desafio cifrado / decifrado de texto</h1>
+            <h1>Desafio encriptar / desencriptar texto</h1>
         </div>
     </header>
     <div class="flex-container">
         <div class="flex-item-left">
-            <textarea name="textarea" id="inputTexto" rows="10" cols="50" autocapitalize="none" autocomplete="off" placeholder="Ingresa el texto aqui"></textarea>
+            <textarea name="textarea" id="inputTexto" rows="11" cols="30" autocapitalize="none" autocomplete="off" placeholder="Ingrese el texto aqui"></textarea>
             <span id="textoInfoEntrada" style="display:block;">Solo con letras minúsculas y sin acentos ni caracteres especiales</span></p>
-            <button id="btnEncriptar" onclick=handledEncriptarTexto()>Encriptar</button>
-            <button id="btnDesencriptar" onclick=handledDesencriptarTexto()>Desencriptar</button>
+                <button id="btnEncriptar" onclick=handledEncriptarTexto()>Encriptar</button>
+                <button id="btnDesencriptar" onclick=handledDesencriptarTexto()>Desencriptar</button>
         </div>
         <div class="flex-item-right">
-            <textarea name="textarea" id="inputTextoCopiar" rows="10" cols="50" autocapitalize="none" autocomplete="off"></textarea>
+            <textarea name="textarea" id="inputTextoCopiar" rows="11" cols="30" autocapitalize="none" autocomplete="off"></textarea>
             <span id="textoInfoCopiar" style="display:none;">Texto requerido</span></p>
             <button id="btnCopiar" onclick=handledCopiarTexto()>Copiar</button>
         </div>
-      </div>
+    </div>
     <script src="/script.js"></script>
 </body>
 </html>

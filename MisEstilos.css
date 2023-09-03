@@ -1,13 +1,68 @@
 body {
   margin: 0;
-  background-color: #f7f7f7;
 }
 
 header {
   background-color: #ffffff;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-      0 4px 6px -4px rgba(0, 0, 0, 0.1);
-  padding: 10px 20px;
+}
+
+.main-title > h1{
+  text-align: center;
+}
+
+#inputTexto::placeholder {
+  font: 30px;
+}
+
+#inputTexto {
+  font-size: 30px;
+}
+
+#inputTextoCopiar {
+  font-size: 30px;
+}
+
+#textoInfoEntrada {
+  font-size: 20px;
+}
+
+#textoInfoCopiar {
+  font-size: 20px;
+}
+
+#btnEncriptar {
+  cursor: pointer;
+  border: 3px solid #05a753;
+  background-color: transparent;
+  height: 50px;
+  width: 150px;
+  color: #05a753;
+  font-size: 1.5em;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+  margin-right: 20px;
+}
+
+#btnDesencriptar {
+  cursor: pointer;
+  border: 3px solid #0e178d;
+  background-color: transparent;
+  height: 50px;
+  width: 150px;
+  color: #0e178d;
+  font-size: 1.5em;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+  margin-left: 20px;
+}
+
+#btnCopiar {
+  cursor: pointer;
+  border: 3px solid #a1a5a6;
+  background-color: transparent;
+  height: 50px;
+  width: 150px;
+  color: #a1a5a6;
+  font-size: 1.5em;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
 }
 
 .flex-container {
