@@ -29,19 +29,35 @@ header {
 }
 
 footer {
-  height: 80px;
+  height: 140px;
   background-color: black;
+  text-align: center;
 }
 
 main {
   background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+textarea {
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+}
+
+button {
+  border-radius: 20px;
+}
+
+button:hover {
+  transform: scale(1.2);
 }
 
 .flex-container {
   display: flex;
-  flex-direction: row;
   text-align: center;
-  justify-content: space-evenly;
 }
 
 .flex-item-left {
@@ -62,10 +78,20 @@ main {
 
 #inputTexto{
   height: 300px;
+  font-size: 30px;
 }
   
 #inputTextoCopiar{
   height: 300px;
+  font-size: 30px;
+}
+
+#textoInfoEntrada{
+  font-size: 20px;
+}
+
+#textoInfoCopiar{
+  font-size: 20px;
 }
 
 #btnEncriptar {
@@ -101,6 +127,25 @@ main {
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
 }
 
+.about > p{
+  color: white;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+.social-media .customIcon {
+  font-size: 30px;
+  color: white;
+}
+
+.social-media .customIcon:hover {
+  transform: scale(1.5);
+}
 
 /* Vista Reponsive (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
