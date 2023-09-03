@@ -10,27 +10,30 @@
     <title>Challengeone Codificador 5</title>
 </head>
 <body>
-    <header>
-        <div class="main-title">
-            <img src="./img/logo-aluralatam-oracle.svg" alt="logo" width="300px">
+    <div class="container">
+        <header>
+            <img src="./img/logo-aluralatam-oracle.svg" alt="logo" width="280px">
             <h1>Challenge ONE G5 - encriptar / desencriptar texto</h1>
-        </div>
-    </header>
-    <main>
-        <div class="flex-container">
-            <div class="flex-item-left">
-                <textarea name="textarea" id="inputTexto" autocapitalize="none" autocomplete="off" placeholder="Ingrese el texto aqui"></textarea>
-                <span id="textoInfoEntrada" style="display:block;">Solo con letras minúsculas y sin acentos ni caracteres especiales</span></p>
-                <button id="btnEncriptar" onclick=handledEncriptarTexto()>Encriptar</button>
-                <button id="btnDesencriptar" onclick=handledDesencriptarTexto()>Desencriptar</button>
+        </header>
+        <main>
+            <div class="flex-container">
+                <div class="flex-item-left">
+                    <textarea name="textarea" id="inputTexto" autocapitalize="none" autocomplete="off" placeholder="Ingrese el texto aqui"></textarea>
+                    <span id="textoInfoEntrada" style="display:block;">Solo con letras minúsculas y sin acentos ni caracteres especiales</span></p>
+                    <div class="flex-item-btn">
+                        <button id="btnEncriptar" onclick=handledEncriptarTexto()>Encriptar</button>
+                        <button id="btnDesencriptar" onclick=handledDesencriptarTexto()>Desencriptar</button>
+                    </div>
+                </div>
+                <div class="flex-item-right">
+                    <textarea id="inputTextoCopiar" name="textarea" autocapitalize="none" autocomplete="off" placeholder="Ingresa el texto que desees encriptar o desencritar"></textarea>
+                    <span id="textoInfoCopiar" style="display:none;">Texto requerido</span></p>
+                    <button id="btnCopiar" onclick=handledCopiarTexto()>Copiar</button>
+                </div>
             </div>
-            <div class="flex-item-right">
-                <textarea id="inputTextoCopiar" name="textarea" autocapitalize="none" autocomplete="off" placeholder="Ingresa el texto que desees encriptar o desencritar"></textarea>
-                <span id="textoInfoCopiar" style="display:none;">Texto requerido</span></p>
-                <button id="btnCopiar" onclick=handledCopiarTexto()>Copiar</button>
-            </div>
-        </div>
-    </main>
+        </main>
+        <footer></footer>
+      </div>
     <script src="./script/script.js"></script>
 </body>
 </html>

@@ -1,5 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+main,
+footer {
+  margin: 0;
+  display: block;
+}
+
 header {
-  background-color: #ffffff;
+  background-color: #ccc;
+  display: inline-flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+footer {
+  height: 80px;
+  background-color: black;
+}
+
+main {
+  background-color: #f4f4f4;
 }
 
 .flex-container {
@@ -19,28 +54,18 @@ header {
   padding: 10px;
 }
 
-.main-title > h1{
-  text-align: center;
+.flex-item-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-#inputTexto::placeholder {
-  font: 30px;
+#inputTexto{
+  height: 300px;
 }
-
-#inputTexto {
-  font-size: 30px;
-}
-
-#inputTextoCopiar {
-  font-size: 30px;
-}
-
-#textoInfoEntrada {
-  font-size: 20px;
-}
-
-#textoInfoCopiar {
-  font-size: 20px;
+  
+#inputTextoCopiar{
+  height: 300px;
 }
 
 #btnEncriptar {
@@ -63,7 +88,6 @@ header {
   color: #0e178d;
   font-size: 1.5em;
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
-  margin-left: 20px;
 }
 
 #btnCopiar {
@@ -77,35 +101,47 @@ header {
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
 }
 
-#inputTexto{
-width: 450px;
-height: 300px;
+
+/* Vista Reponsive (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #inputTexto {
+    width: 450px;
+  }
+  #inputTextoCopiar {
+    width: 450px;
+  }
 }
 
-#inputTextoCopiar{
-  width: 450px;
-  height: 300px;
+@media only screen and (max-width: 1200px) {
+  header {
+    display: inline-block;
+    text-align: center;
+  }
+  #inputTexto{
+    width: 350px;
+  }
+  #inputTextoCopiar{
+    width: 350px;
+  }
 }
 
-/* Vista Responsive */
 @media (max-width: 800px) {
   .flex-container {
     flex-direction: column;
   }
-}
-
-@media (max-width: 364px) {
-  #inputTexto{
-    width: 300px;
+  .flex-item-btn{
+    flex-direction: column;
+    align-items: center;
   }
-  #inputTextoCopiar{
-    width: 300px;
-  }
-  #btnEncriptar {
+  .flex-item-btn #btnEncriptar{
     margin-bottom: 20px;
   }
-  #btnDesencriptar {
-    margin-left: 0px;
-    margin-bottom: 10px;
+  #inputTexto{
+    min-width: 100%;
+    width: 100%;
+  }
+  #inputTextoCopiar{
+    min-width: 100%;
+    width: 100%;
   }
 }
