@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/MisEstilos.css">
+      <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Challengeone Codificador 5</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./img/logo-aluralatam-oracle.svg" alt="logo" width="280px">
+            <h1>Challenge ONE G5 - encriptar / desencriptar texto</h1>
+        </header>
+        <main>
+            <div class="flex-container">
+                <div class="flex-item-left">
+                    <textarea name="textarea" id="inputTexto" autocapitalize="none" autocomplete="off" placeholder="Ingrese el texto aqui"></textarea>
+                    <span id="textoInfoEntrada" style="display:block;">Solo con letras minúsculas y sin acentos ni caracteres especiales</span></p>
+                    <div class="flex-item-btn">
+                        <button id="btnEncriptar" onclick=handledEncriptarTexto()>Encriptar</button>
+                        <button id="btnDesencriptar" onclick=handledDesencriptarTexto()>Desencriptar</button>
+                    </div>
+                </div>
+                <div class="flex-item-right">
+                    <textarea id="inputTextoCopiar" name="textarea" autocapitalize="none" autocomplete="off" placeholder="Ingresa el texto que desees encriptar o desencritar"></textarea>
+                    <span id="textoInfoCopiar" style="display:none;">Texto requerido</span></p>
+                    <button id="btnCopiar" onclick=handledCopiarTexto()>Copiar</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="about">
+                <p class="user">Proyecto realizado por Martin Aldair Ramirez Ramos</p>
+                <p class="topic">Oracle Next Education - Alura 2023</p>
+            </div>
+            <div class="social-media">
+                <a href="https://github.com/MartinAldair" target="_blank"><i class="fa-brands fa-github customIcon"></i></a>
+                <a href="https://www.linkedin.com/in/martin-aldair-ramirez-ramos" target="_blank"><i class="fa-brands fa-linkedin customIcon"></i></a>
+            </div>
+        </footer>
+      </div>
+    <script src="./script/script.js"></script>
+</body>
+</html>

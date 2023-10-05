@@ -1,0 +1,192 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+main,
+footer {
+  margin: 0;
+  display: block;
+}
+
+header {
+  background-color: #ccc;
+  display: inline-flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+footer {
+  height: 140px;
+  background-color: black;
+  text-align: center;
+}
+
+main {
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+textarea {
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+}
+
+button {
+  border-radius: 20px;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+.flex-container {
+  display: flex;
+  text-align: center;
+}
+
+.flex-item-left {
+  border-top: 1px;
+  padding: 10px;
+}
+
+.flex-item-right {
+  border-top: 1px;
+  padding: 10px;
+}
+
+.flex-item-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#inputTexto{
+  height: 300px;
+  font-size: 30px;
+}
+  
+#inputTextoCopiar{
+  height: 300px;
+  font-size: 30px;
+}
+
+#textoInfoEntrada{
+  font-size: 20px;
+}
+
+#textoInfoCopiar{
+  font-size: 20px;
+}
+
+#btnEncriptar {
+  cursor: pointer;
+  border: 3px solid #05a753;
+  background-color: transparent;
+  height: 50px;
+  width: 150px;
+  color: #05a753;
+  font-size: 1.5em;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+
+#btnDesencriptar {
+  cursor: pointer;
+  border: 3px solid #0e178d;
+  background-color: transparent;
+  height: 50px;
+  width: 150px;
+  color: #0e178d;
+  font-size: 1.5em;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+
+#btnCopiar {
+  cursor: pointer;
+  border: 3px solid #a1a5a6;
+  background-color: transparent;
+  height: 50px;
+  width: 150px;
+  color: #a1a5a6;
+  font-size: 1.5em;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+
+.about > p{
+  color: white;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+.social-media .customIcon {
+  font-size: 30px;
+  color: white;
+}
+
+.social-media .customIcon:hover {
+  transform: scale(1.5);
+}
+
+/* Vista Reponsive (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #inputTexto {
+    width: 450px;
+  }
+  #inputTextoCopiar {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  header {
+    display: inline-block;
+    text-align: center;
+  }
+  #inputTexto{
+    width: 350px;
+  }
+  #inputTextoCopiar{
+    width: 350px;
+  }
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-item-btn{
+    flex-direction: column;
+    align-items: center;
+  }
+  .flex-item-btn #btnEncriptar{
+    margin-bottom: 20px;
+  }
+  #inputTexto{
+    min-width: 100%;
+    width: 100%;
+  }
+  #inputTextoCopiar{
+    min-width: 100%;
+    width: 100%;
+  }
+}
