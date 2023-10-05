@@ -1,9 +1,3 @@
-desarrollo
-
-
-https://github.com/MartinAldair/m.challenge.cifrado.decifrado.github.io/assets/138342232/cf16adb0-be47-4576-9ee3-697ff037ce1f
-
-=======
 Encriptador de texto - Alura Challenges ONE
 
 Informacion acerca del desafio.
@@ -27,5 +21,4 @@ Requisitos:
 Extras:
 * Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
 
-Demo
-https://github.com/MartinAldair/m.challenge.cifrado.decifrado.github.io/assets/138342232/31c10ee3-b091-492d-bd66-5e77bd1c2f0b
+https://github.com/MartinAldair/m.challenge.cifrado.decifrado.github.io/assets/138342232/cf16adb0-be47-4576-9ee3-697ff037ce1f
